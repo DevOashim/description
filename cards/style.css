@@ -143,7 +143,8 @@ body {
     width: 300px;
     padding: 30px 20px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    /* Inner shadow added using inset */
+    box-shadow: inset 0 5px 15px rgba(69, 68, 68, 0.1);
     transition: transform 0.3s ease;
     border: 1px solid #eee;
     display: flex;
@@ -151,9 +152,6 @@ body {
     align-items: center;
 }
 
-.version-card:hover {
-    transform: translateY(-5px);
-}
 
 /* Card Logo */
 .card-logo {
