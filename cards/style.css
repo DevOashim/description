@@ -1,0 +1,324 @@
+body {
+    background: #fdfdfd00;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Section spacing */
+.support-section {
+    padding: 60px 0;
+}
+
+/* Card */
+.support-card {
+    background: linear-gradient(135deg, #9BCB52, #82B440);
+    border-radius: 16px;
+    padding: 28px;
+    height: 100%;
+    color: #fff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+/* Icon */
+.support-card .icon {
+    margin-bottom: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.support-card .icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Title */
+.support-card h4 {
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+/* Badge */
+.badge-corner {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    backdrop-filter: blur(10px);
+}
+
+/* Button */
+.btn-envato {
+    display: inline-block;
+    margin-top: 14px;
+    background: #fff;
+    color: #5A7F2C;
+    padding: 9px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Outline button */
+.btn-outline-envato {
+    display: inline-block;
+    margin-top: 14px;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 9px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+
+
+/* cart two */
+/* Main Container */
+.versions-container {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    color: #333;
+}
+
+/* Header */
+.versions-title {
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.available-badge {
+    color: #82B440;
+    font-style: italic !important;
+}
+
+.envato-icon {
+    height: 42px;
+    width: 42px;
+    vertical-align: middle;
+}
+
+/* Subtitle */
+.versions-subtitle {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Cards Grid */
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+/* Individual Card Link */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Card */
+.version-card {
+    background: #fff;
+    width: 300px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.version-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Logo */
+.card-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* SVG Icons - Framework specific colors */
+.icon-laravel {
+    stroke: #FF2D20;
+}
+
+.icon-react {
+    stroke: #61DAFB;
+}
+
+.icon-angular {
+    stroke: #DD0031;
+}
+
+.icon-nextjs {
+    stroke: #000;
+}
+
+.icon-php {
+    stroke: #777BB4;
+}
+
+.icon-vue {
+    stroke: #4FC08D;
+}
+
+.icon-html {
+    stroke: #FF4B00;
+}
+
+.icon-wordpress {
+    stroke: #000000;
+}
+
+/* SVG Base Styles */
+.card-icon {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* device design sec */
+.device-section {
+    position: relative;
+    width: 100%;
+    min-height: 62vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.device-mockup-container {
+    position: relative;
+    width: 50%;
+    max-width: 1400px;
+    aspect-ratio: 16/9;
+}
+
+/* Device mockup PNG (top layer with transparent screens) */
+.device-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('responsive-img.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Base style for all screen layers */
+.screen-layer {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* PC/Desktop Monitor Screen */
+.screen-pc {
+    top: 9%;
+    left: 30%;
+    width: 45%;
+    height: 49%;
+    z-index: 1;
+}
+
+.screen-laptop {
+    top: 43%;
+    left: 12%;
+    width: 30%;
+    height: 39%;
+    z-index: 2;
+}
+
+.screen-tablet {
+    top: 46%;
+    right: 11%;
+    width: 25%;
+    height: 34%;
+    z-index: 3;
+}
+
+.screen-mobile {
+    bottom: 6%;
+    left: 85%;
+    width: 7%;
+    height: 32%;
+    z-index: 4;
+}
+
+.screen-watch {
+    bottom: 11%;
+    left: 75%;
+    width: 6%;
+    height: 9%;
+    z-index: 5;
+    border-radius: 50%;
+}
+
+/* Alternative: Use img tags instead of background images */
+.screen-layer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .device-mockup-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .device-mockup-container {
+        aspect-ratio: 4/3;
+    }
+}
+
+.versions-container {
+    max-width: 700px !important;
+}
