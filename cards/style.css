@@ -10,12 +10,12 @@ body {
 
 /* Card */
 .support-card {
-    background: linear-gradient(135deg, #9BCB52, #82B440);
+    background: linear-gradient(135deg, #92c64f, #7AA93C);
     border-radius: 16px;
+    width: 307px;
     padding: 28px;
     height: 100%;
     color: #fff;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
     position: relative;
 }
 
