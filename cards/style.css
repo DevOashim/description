@@ -134,6 +134,7 @@ body {
 /* Individual Card Link */
 .card-link {
     text-decoration: none;
+    position: relative;
     color: inherit;
 }
 
@@ -211,6 +212,40 @@ body {
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+}
+
+/* Coming Soon Version Card */
+.version-card.coming-soon {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.version-card.coming-soon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(128, 128, 128, 0.4);
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.version-card.coming-soon::after {
+    content: 'Coming Soon';
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    background: rgb(255 0 0 / 100%);
+    color: #fff;
+    padding: 12px 29px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    z-index: 2;
+    white-space: nowrap;
 }
 
 /* device design sec */
